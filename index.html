@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/slider-reservas.css">
+    <title>Hosteria Matamundo</title>
+</head>
+<body>
+    <section class="cta mt-4" id="menu">
+        <div class="container">
+            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
+                <div class="content">
+                    <br>
+                    <h1 class="text-center">Hosteria Matamundo | Gestor de Operaciones</h1>
+                        <p class="align-items-center">Control y Gestion</p>
+                        <button class="btn btn-primary align-items-center" id="inicio" style="height: 40px;">Inicio</button>
+                        <button class="btn btn-primary align-items-center" id="reservaciones" style="height: 40px;">Reservaciones</button>
+                        <button class="btn btn-primary align-items-center" id="inventarios" style="height: 40px;">Inventarios</button>
+                        <button class="btn btn-primary align-items-center" id="listaClientes" style="height: 40px;">Lista de Clientes</button>
+                        <button class="btn btn-primary align-items-center" id="reporteVentas" style="height: 40px;">Reporte de Ventas</button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home container section-slider mt-5" id="slider">
+        <div class="container">
+            <div class="slider">
+                <div class="slide active" style="background-image: url('img/slide-1.jpg')">
+                    <div class="container">
+                        <div class="caption">
+                            <h1>Tu Mejor Opcion en este 2020</h1>
+                            <p>Los mejores Precios del Mercado</p>
+                            <a href="">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/slide-2.jpg')">
+                    <div class="container">
+                        <div class="caption">
+                            <h1>Disfruta de un ambiente Diferente</h1>
+                            <p>Un ambiente Campestre sin necesidad de Salir de la Ciudad</p>
+                            <a href="">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/slide-3.jpg')">
+                    <div class="container">
+                        <div class="caption">
+                            <h1>El mejor Lugar para Hospedarse y Disfrutar tus Vacaciones</h1>
+                            <p>En medio de la Naturaleza</p>
+                            <a href="">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+       <!-- controls  -->
+       <div class="controls">
+           <div class="prev"><</div>
+           <div class="next">></div>
+       </div>
+   
+       <!-- indicators -->
+       <div class="indicator">
+       </div>
+    </section>
+
+    <section class="seccion-reservaciones container mt-4 pt-4 pb-4" id="seccionReservaciones">
+        <div class="container m-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-container">
+                        <h3 class="text-center">Habitaciones Disponibles</h3 class="text-center">
+                        <div id="img">
+                            <div class="primeraHabitacion"><h1 align="center">1</h1></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center" style="color: #fff;">Todas las Comodidades</h3 class="text-center">
+                    <!-- Slider reservas -->
+                    <div class="content-all">
+                        <div class="content-carrousel" id="carrusel">
+                            <figure><img class="carruselImagen" src="img/img1.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img2.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img3.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img4.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img5.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img6.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img7.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img8.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img9.jpg"></figure>
+                            <figure><img class="carruselImagen" src="img/img10.jpg"></figure>
+                        </div>
+                    </div>
+                    <!-- Slider reservas -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="paraQuitar" style="position: absolute; top: 312px; right: 150px; width: 500px; height: 260px;">
+        <figure style="width: 500px; height: 260px; overflow: hidden;">
+            <img class="carruselImagen" src="img/fondoCarrusel.jpg" style="width: 100%; object-fit: cover;">
+            <div class="oscurecer" align="center">
+                <button class="btn-reservarAhora">Reservar Ahora</button>
+            </div>
+        </figure>
+    </div>
+    <script src="js/slider.js"></script>
+    <script src="js/slider-reservas.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
